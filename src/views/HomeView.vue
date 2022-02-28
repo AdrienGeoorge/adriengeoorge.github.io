@@ -1,6 +1,7 @@
 <script setup>
-import SocialBox from "../components/SocialBox.vue";
-import MapBox from "../components/MapBox.vue";
+import SocialBox from "../components/SocialBox.vue"
+import MapBox from "../components/MapBox.vue"
+import ButtonBox from "../components/ButtonBox.vue"
 </script>
 
 <template>
@@ -18,6 +19,14 @@ import MapBox from "../components/MapBox.vue";
       </div>
     </div>
 
+    <MapBox></MapBox>
+
+    <ButtonBox class="box-height-2" url="/bg-large.png">
+      <template #title>Parce que vous voulez en savoir plus...</template>
+      <template #description>Apprenez-en plus sur mes formations et mon parcours professionnel</template>
+      <template #button>A propos de moi</template>
+    </ButtonBox>
+
     <SocialBox class="linkedin" url="https://www.linkedin.com/in/adrien-george-8ab775184/">
       <template #icon>
         <img src="/linkedin.png" alt="Mon LinkedIn">
@@ -32,6 +41,10 @@ import MapBox from "../components/MapBox.vue";
       GitHub
     </SocialBox>
 
-    <MapBox></MapBox>
+    <ButtonBox url="/bg-small.png">
+      <template #title>Mon champ de compétences</template>
+      <template #description>Parce que c'est important...</template>
+      <template #button>En savoir plus</template>
+    </ButtonBox>
   </div>
 </template>

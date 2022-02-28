@@ -1,10 +1,7 @@
 <template>
   <div class="box">
-    <img :src="this.map" alt="Ma localisation" class="my-position">
-  </div>
-  <div class="box">
     <div class="box-content text-center">
-      <p>📍</p>
+      <img src="/position.png" alt="Ma position" class="position-icon">
       <div class="title">Paris et petite couronne</div>
     </div>
   </div>
