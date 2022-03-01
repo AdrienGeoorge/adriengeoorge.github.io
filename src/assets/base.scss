@@ -382,3 +382,31 @@ nav {
     }
   }
 }
+
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 1s ease-out;
+  width: calc(100vw - 208px);
+  left: 10.5em;
+}
+
+.slide-enter-from {
+  position: absolute;
+  bottom: -200%;
+}
+
+.slide-enter-to {
+  position: absolute;
+  bottom: -5.8em;
+}
+
+.slide-leave-from {
+  position: absolute;
+  top: 80px;
+}
+
+.slide-leave-to {
+  position: absolute;
+  top: -100%;
+}

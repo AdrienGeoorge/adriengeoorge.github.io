@@ -12,7 +12,11 @@ import {RouterLink, RouterView} from 'vue-router'
       <RouterLink to="/projects" title="Mes compétences">📚</RouterLink>
       <RouterLink to="/projects" title="Mes projets">🖥</RouterLink>
     </nav>
-    <RouterView/>
+    <router-view v-slot="{ Component }">
+      <transition name="slide">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
