@@ -19,6 +19,22 @@ const router = createRouter({
             meta: {
                 title: 'Adrien George - A propos de moi'
             }
+        },
+        {
+            path: '/skills',
+            name: 'skills',
+            component: () => import('../views/SkillsView.vue'),
+            meta: {
+                title: 'Adrien George - Mes domaines de compétences'
+            }
+        },
+        {
+            path: '/projects',
+            name: 'projects',
+            component: () => import('../views/ProjectsView.vue'),
+            meta: {
+                title: 'Adrien George - Mes projets'
+            }
         }
     ]
 })

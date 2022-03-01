@@ -9,14 +9,14 @@ import {RouterLink, RouterView} from 'vue-router'
       <RouterLink to="/about" title="A propos de moi">
         <img src="/me-small.png" alt="A propos de moi" class="me-small">
       </RouterLink>
-      <RouterLink to="/projects" title="Mes compétences">📚</RouterLink>
+      <RouterLink to="/skills" title="Mes compétences">📚</RouterLink>
       <RouterLink to="/projects" title="Mes projets">🖥</RouterLink>
     </nav>
-    <router-view v-slot="{ Component }">
+    <RouterView v-slot="{ Component }">
       <transition name="slide">
         <component :is="Component" />
       </transition>
-    </router-view>
+    </RouterView>
   </div>
 </template>
 

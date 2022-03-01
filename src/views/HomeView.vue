@@ -17,9 +17,9 @@ import ButtonBox from "../components/ButtonBox.vue"
           </div>
         </div>
         <div class="my-presentation">
-          <div class="my-name">Hey, moi c'est Adrien 👋</div>
-          <div class="job-name">Développeur Full-Stack</div>
-          <p>Je suis intéréssé par le domaine de l'informatique et les nouvelles technologies dont notamment l'IoT.</p>
+          <div class="title">Hey, moi c'est Adrien 👋</div>
+          <div class="description">Développeur Full-Stack</div>
+          <span>Je suis intéréssé par le domaine de l'informatique et les nouvelles technologies dont notamment l'IoT.</span>
         </div>
       </div>
     </div>
