@@ -1,5 +1,5 @@
 <template>
-  <div class="box box-with-background" :style="{backgroundImage: 'url(' + url + ')'}">
+  <div class="box box-with-background" :style="{backgroundImage: 'url(' + backgroundUrl + ')'}">
     <div class="box-content">
       <div class="title">
         <slot name="title"></slot>
@@ -7,7 +7,7 @@
       <p class="description">
         <slot name="description"></slot>
       </p>
-      <RouterLink to="/about" class="box-button">
+      <RouterLink :to="linkUrl" class="box-button">
         <slot name="button"></slot>
       </RouterLink>
     </div>
@@ -16,6 +16,6 @@
 
 <script>
 export default {
-  props: ['url']
+  props: ['backgroundUrl', 'linkUrl']
 };
 </script>

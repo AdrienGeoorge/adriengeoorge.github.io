@@ -108,7 +108,7 @@ nav {
 }
 
 .grid {
-  padding: 80px 0 120px;
+  padding: 80px 20px 120px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -262,10 +262,40 @@ nav {
   }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1080px) {
   .grid {
-    padding: unset;
-    grid-template-columns: unset;
+    padding: 20px;
+    grid-template-columns: 1fr;
     grid-template-rows: unset;
+  }
+
+  .box {
+    &.box-width-2 {
+      grid-column: unset;
+    }
+
+    &.box-height-2 {
+      grid-row: unset;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    .about-me {
+      display: block;
+
+      .my-presentation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+      }
+
+      .my-memoji-relative {
+        display: none;
+      }
+    }
   }
 }

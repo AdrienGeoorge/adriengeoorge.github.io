@@ -11,7 +11,7 @@ import ButtonBox from "../components/ButtonBox.vue"
         <div class="my-memoji-relative">
           <img class="my-memoji-image" src="/me.png" alt="Mon moi">
         </div>
-        <div>
+        <div class="my-presentation">
           <div class="my-name">Hey, moi c'est Adrien 👋</div>
           <div class="job-name">Développeur Full-Stack</div>
           <p>Je suis intéréssé par le domaine de l'informatique et les nouvelles technologies dont notamment l'IoT.</p>
@@ -21,7 +21,7 @@ import ButtonBox from "../components/ButtonBox.vue"
 
     <MapBox></MapBox>
 
-    <ButtonBox class="box-height-2" url="/bg-large.png">
+    <ButtonBox class="box-height-2" background-url="/bg-large.png" link-url="/about">
       <template #title>Parce que vous voulez en savoir plus...</template>
       <template #description>Apprenez-en plus sur mes formations et mon parcours professionnel</template>
       <template #button>A propos de moi</template>
@@ -41,7 +41,7 @@ import ButtonBox from "../components/ButtonBox.vue"
       GitHub
     </SocialBox>
 
-    <ButtonBox url="/bg-small.png">
+    <ButtonBox background-url="/bg-small.png" link-url="/skills">
       <template #title>Mon champ de compétences</template>
       <template #description>Parce que c'est important...</template>
       <template #button>En savoir plus</template>
