@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <div class="box-content text-center">
+    <div class="box-content box-map text-center">
       <img src="/position.png" alt="Ma position" class="position-icon">
       <div class="title">Paris et petite couronne</div>
     </div>
@@ -10,26 +10,26 @@
 <script>
 export default {
   mounted() {
-    this.map = this.getMediaPreference();
+    this.map = this.getMediaPreference()
   },
 
   data() {
     return {
       map: "map-light",
-    };
+    }
   },
 
   methods: {
     getMediaPreference() {
       const hasDarkPreference = window.matchMedia(
           "(prefers-color-scheme: dark)"
-      ).matches;
+      ).matches
       if (hasDarkPreference) {
-        return "/map-dark.png";
+        return "/map-dark.png"
       } else {
-        return "/map-light.png";
+        return "/map-light.png"
       }
     },
   }
-};
+}
 </script>

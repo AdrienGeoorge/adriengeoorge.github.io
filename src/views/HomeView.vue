@@ -6,10 +6,15 @@ import ButtonBox from "../components/ButtonBox.vue"
 
 <template>
   <div class="grid">
-    <div class="box box-width-2">
+    <div class="box box-width-3">
       <div class="box-content about-me">
-        <div class="my-memoji-relative">
-          <img class="my-memoji-image" src="/me.png" alt="Mon moi">
+        <div class="my-memoji">
+          <div class="my-memoji-1">
+            <img class="my-memoji-image" src="/me.png" alt="Mon moi">
+          </div>
+          <div class="my-memoji-2">
+            <img class="my-memoji-image" src="/me-dev.png" alt="Mon moi">
+          </div>
         </div>
         <div class="my-presentation">
           <div class="my-name">Hey, moi c'est Adrien 👋</div>
@@ -19,20 +24,17 @@ import ButtonBox from "../components/ButtonBox.vue"
       </div>
     </div>
 
-    <MapBox></MapBox>
-
-    <ButtonBox class="box-height-2" background-url="/bg-large.png" link-url="/about">
+    <ButtonBox class="box-width-height-2" background-url="/bg-large.png" link-url="/about">
       <template #title>Parce que vous voulez en savoir plus...</template>
       <template #description>Apprenez-en plus sur mes formations et mon parcours professionnel</template>
       <template #button>A propos de moi</template>
     </ButtonBox>
 
-    <SocialBox class="linkedin" url="https://www.linkedin.com/in/adrien-george-8ab775184/">
-      <template #icon>
-        <img src="/linkedin.png" alt="Mon LinkedIn">
-      </template>
-      Linkedin
-    </SocialBox>
+    <ButtonBox class="box-width-height-2" background-url="/bg-small.png" link-url="/skills">
+      <template #title>Parce que les compétences ont leur importance...</template>
+      <template #description>Découvrez mes domaines de compétences</template>
+      <template #button>En savoir plus</template>
+    </ButtonBox>
 
     <SocialBox class="git" url="https://github.com/AdrienGeoorge">
       <template #icon>
@@ -41,10 +43,13 @@ import ButtonBox from "../components/ButtonBox.vue"
       GitHub
     </SocialBox>
 
-    <ButtonBox background-url="/bg-small.png" link-url="/skills">
-      <template #title>Mon champ de compétences</template>
-      <template #description>Parce que c'est important...</template>
-      <template #button>En savoir plus</template>
-    </ButtonBox>
+    <MapBox></MapBox>
+
+    <SocialBox class="linkedin" url="https://www.linkedin.com/in/adrien-george-8ab775184/">
+      <template #icon>
+        <img src="/linkedin.png" alt="Mon LinkedIn">
+      </template>
+      Linkedin
+    </SocialBox>
   </div>
 </template>

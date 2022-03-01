@@ -106,7 +106,7 @@ nav {
 
 .title {
   font-family: silka medium, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--color-heading);
 }
@@ -120,7 +120,7 @@ nav {
   max-width: 1800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 250px 250px;
   grid-gap: 1rem;
   grid-auto-rows: 280px;
@@ -133,16 +133,17 @@ nav {
   background: var(--color-background);
   position: relative;
 
-  &.box-width-2 {
+  &.box-width-3 {
+    grid-column: span 3;
+  }
+
+  &.box-width-height-2 {
+    grid-row: span 2;
     grid-column: span 2;
   }
 
-  &.box-height-2 {
-    grid-row: span 2;
-  }
-
   .box-content {
-    padding: 36px 42px;
+    padding: 36px;
     height: 100%;
     width: 100%;
     position: relative;
@@ -150,13 +151,22 @@ nav {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+
+    &.box-map {
+      padding: 36px 25px;
+    }
   }
 
   &.box-with-background {
     background-repeat: no-repeat;
     background-size: cover;
 
+    .box-content {
+      align-items: unset;
+    }
+
     .title {
+      font-size: 20px;
       color: var(--vt-c-text-dark-1);
     }
 
@@ -180,26 +190,47 @@ nav {
 
   .about-me {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 4rem;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 5rem;
 
-    .my-memoji-relative {
-      animation: zoom-in-zoom-out 1s ease-out;
+    .my-memoji {
       height: 100%;
 
-      .my-memoji-image {
-        height: 18em;
-        position: absolute;
-        bottom: -3em;
-        left: -2.5em;
+      .my-memoji-1 {
+        animation: zoom-in-zoom-out 1s ease-out;
+        height: 100%;
+      }
+
+      .my-memoji-2 {
+        display: none;
+        height: 100%;
+      }
+
+      .my-memoji-1, .my-memoji-2 {
+        .my-memoji-image {
+          height: 16em;
+          position: absolute;
+          bottom: -4em;
+          left: -2.5em;
+        }
+      }
+
+      &:hover {
+        .my-memoji-1 {
+          display: none;
+        }
+
+        .my-memoji-2 {
+          display: block;
+        }
       }
     }
 
     .my-name {
       font-family: silka medium, sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 500;
-      color: var(--color-heading)
+      color: var(--color-heading);
     }
 
     .job-name {
@@ -207,7 +238,7 @@ nav {
       font-size: 15px;
       font-weight: 300;
       margin-bottom: 1rem;
-      color: var(--color-heading)
+      color: var(--color-heading);
     }
 
   }
@@ -308,17 +339,18 @@ nav {
       grid-template-columns: 1.5fr 3fr;
     }
 
-    &.box-width-2 {
+    &.box-width-3 {
       grid-column: unset;
     }
 
-    &.box-height-2 {
+    &.box-width-height-2 {
       grid-row: unset;
+      grid-column: unset;
     }
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   nav {
     gap: 0.5rem;
 
