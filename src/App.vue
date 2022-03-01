@@ -5,8 +5,11 @@ import {RouterLink, RouterView} from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/" title="Accueil">🏠</RouterLink>
+      <RouterLink to="/about" title="A propos de moi">
+        <img src="/me-small.png" alt="A propos de moi" class="me-small">
+      </RouterLink>
+      <RouterLink to="/about" title="Mes projets">🖥</RouterLink>
     </nav>
   </header>
   <RouterView/>
