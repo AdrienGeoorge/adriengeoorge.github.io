@@ -26,14 +26,14 @@ import ButtonBox from "../components/ButtonBox.vue"
 
     <ButtonBox class="box-width-height-2" background-url="/bg-large.png" link-url="/about">
       <template #title>Parce que vous voulez en savoir plus...</template>
-      <template #description>Apprenez-en plus sur mes formations et mon parcours professionnel</template>
-      <template #button>A propos de moi</template>
+      <template #description>Apprenez-en plus sur mes formations, mon parcours professionnel et mes compétences</template>
+      <template #button>En savoir plus</template>
     </ButtonBox>
 
-    <ButtonBox class="box-width-height-2" background-url="/bg-small.png" link-url="/skills">
-      <template #title>Parce que les compétences ont leur importance...</template>
-      <template #description>Découvrez mes domaines de compétences</template>
-      <template #button>En savoir plus</template>
+    <ButtonBox class="box-width-height-2" background-url="/bg-small.png" link-url="/carrer">
+      <template #title>Parce que mes projets peuvent vous éclaircir...</template>
+      <template #description>Découvrez quelques uns de mes projets</template>
+      <template #button>Découvrez-les</template>
     </ButtonBox>
 
     <SocialBox class="git" url="https://github.com/AdrienGeoorge">

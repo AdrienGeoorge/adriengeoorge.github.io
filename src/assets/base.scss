@@ -59,6 +59,14 @@ p {
   margin: 0.5em 0;
 }
 
+.mt-1 {
+  margin-top: 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
@@ -107,10 +115,6 @@ nav {
   }
 }
 
-.text-center {
-  text-align: center;
-}
-
 .title {
   font-family: silka medium, sans-serif;
   font-size: 20px;
@@ -146,12 +150,30 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  width: 100%;
 }
 
 .grid-about {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
+}
+
+.grid-carrer {
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 1rem;
+
+  .job-date {
+    color: #6c6c6c;
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10em;
+    text-align: right;
+  }
 }
 
 .box {

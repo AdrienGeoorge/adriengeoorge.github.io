@@ -9,7 +9,7 @@ import {RouterLink, RouterView} from 'vue-router'
       <RouterLink to="/about" title="A propos de moi">
         <img src="/me-small.png" alt="A propos de moi" class="me-small">
       </RouterLink>
-      <RouterLink to="/skills" title="Mes compétences">📚</RouterLink>
+      <RouterLink to="/carrer" title="Mon parcours">📚</RouterLink>
       <RouterLink to="/projects" title="Mes projets">🖥</RouterLink>
     </nav>
     <RouterView v-slot="{ Component }">

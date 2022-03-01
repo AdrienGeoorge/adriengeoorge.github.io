@@ -21,9 +21,9 @@ const router = createRouter({
             }
         },
         {
-            path: '/skills',
-            name: 'skills',
-            component: () => import('../views/SkillsView.vue'),
+            path: '/carrer',
+            name: 'carrer',
+            component: () => import('../views/CarrerView.vue'),
             meta: {
                 title: 'Adrien George - Mes domaines de compétences'
             }
