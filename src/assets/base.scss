@@ -236,6 +236,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     text-decoration: none;
+    background-position: top;
 
     .box-content {
       align-items: unset;
@@ -452,6 +453,9 @@ nav {
     grid-template-rows: unset;
   }
 
+  .grid_1_1 {
+    grid-template-columns: 1fr;
+  }
 
   .box {
     .about-me {
@@ -467,7 +471,7 @@ nav {
       grid-column: unset;
     }
 
-    &.box-width-3-height-2{
+    &.box-width-3-height-2 {
       grid-column: span 4;
     }
 
@@ -518,6 +522,8 @@ nav {
   }
 
   .box {
+    max-width: calc(100vw - 2em);
+
     .about-me {
       display: block;
 
@@ -535,7 +541,7 @@ nav {
     }
   }
 
-  .grid_1_1 {
-    grid-template-columns: 1fr;
+  .grid-skills {
+    grid-template-columns: 1fr 1fr;
   }
 }
