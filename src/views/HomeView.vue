@@ -26,7 +26,7 @@ import ButtonBox from "../components/ButtonBox.vue"
 
     <ButtonBox class="box-width-height-2" background-url="/bg-large.png" link-url="/about">
       <template #title>Parce que vous voulez en savoir plus...</template>
-      <template #description>Apprenez-en plus sur mes formations, mon parcours professionnel et mes compétences</template>
+      <template #description>Apprenez-en plus sur mon parcours professionnel et mes champs de compétences</template>
       <template #button>En savoir plus</template>
     </ButtonBox>
 

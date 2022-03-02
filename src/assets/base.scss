@@ -16,6 +16,7 @@
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
+  --vt-c-light-gray: #e9ecef;
 
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
@@ -37,6 +38,7 @@
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
+  --color-box-icon: var(--vt-c-light-gray);
 
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
@@ -167,12 +169,18 @@ nav {
 
   .job-date {
     color: #6c6c6c;
-    font-size: 11px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10em;
-    text-align: right;
+  }
+}
+
+.grid-skills {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+  div {
+    font-size: 15px;
+    color: white;
   }
 }
 
@@ -328,6 +336,7 @@ nav {
   padding: 0.75em;
   font-size: 40px;
   text-align: center;
+  background-color: var(--color-box-icon);
 }
 
 /* TRANSITIONS */
@@ -341,7 +350,7 @@ nav {
 
 .slide-enter-from {
   position: absolute;
-  top: -150vh;
+  top: -200vh;
 }
 
 .slide-enter-to {
@@ -373,6 +382,7 @@ nav {
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
+    --color-box-icon: var(--vt-c-black-mute);
 
     --color-border: var(--vt-c-divider-dark-2);
     --color-border-hover: var(--vt-c-divider-dark-1);
@@ -383,6 +393,10 @@ nav {
 }
 
 @media (max-width: 1300px) {
+  body {
+    padding: 0 1em;
+  }
+
   .main {
     padding: unset;
     display: unset;
@@ -405,7 +419,7 @@ nav {
   }
 
   .grid {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .grid_1_1 .box .box-content {
@@ -419,13 +433,13 @@ nav {
   .slide-enter-active,
   .slide-leave-active {
     transition: all 1s ease-out;
-    width: calc(100vw);
+    width: calc(100vw - 2em);
     left: 0;
   }
 
   .slide-enter-from {
     position: absolute;
-    top: -150vh;
+    top: -200vh;
   }
 
   .slide-enter-to {
@@ -468,12 +482,12 @@ nav {
   .slide-enter-active,
   .slide-leave-active {
     transition: all 1s ease-out;
-    width: calc(100vw);
+    width: calc(100vw - 2em);
   }
 
   .slide-enter-from {
     position: absolute;
-    top: -150vh;
+    top: -300vh;
   }
 
   .slide-enter-to {
@@ -522,5 +536,9 @@ nav {
         display: none;
       }
     }
+  }
+
+  .grid_1_1 {
+    grid-template-columns: 1fr;
   }
 }

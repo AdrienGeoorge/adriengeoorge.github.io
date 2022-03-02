@@ -17,10 +17,9 @@ import IconBox from "../components/IconBox.vue"
           C'est ici que tout a commencé, mon envie et mon ambition d'évoluer dans le domaine de l'informatique sont nés.
         </p>
         <p>
-          En 2017, après l'obtention de mon diplôme je me suis dirigé sur une nouvelle formation. Celle-ci me permettait
-          soit de
-          continuer dans le domaine des télécommunications et matériels résaux, soit de m'orienter vers le développement
-          web et mobile. Le choix fut difficile, mais j'ai fini par choisir le développement.
+          En 2017, après l'obtention de mon diplôme je me suis dirigé vers une nouvelle formation. Celle-ci me
+          permettait soit de continuer dans le domaine des télécommunications et matériels résaux, soit de m'orienter
+          vers le développement web et mobile. Le choix fut difficile, mais j'ai fini par choisir le développement.
         </p>
         <p>
           Depuis, je m'améliore et j'apprends constamment de nouvelles choses. Je suis passioné, et j'ai l'envie
@@ -34,11 +33,11 @@ import IconBox from "../components/IconBox.vue"
           <div class="title">Mes passe-temps</div>
           <div class="description">Ce que je fais de mon temps libre...</div>
           <div class="grid-about">
-            <IconBox color="#e9ecef">🍿</IconBox>
-            <IconBox color="#e9ecef">🎶</IconBox>
-            <IconBox color="#e9ecef">🍻</IconBox>
-            <IconBox color="#e9ecef">🏋🏻‍♂️</IconBox>
-            <IconBox color="#e9ecef">✈️</IconBox>
+            <IconBox>🍿</IconBox>
+            <IconBox>🎶</IconBox>
+            <IconBox>🍻</IconBox>
+            <IconBox>🏋🏻‍♂️</IconBox>
+            <IconBox>✈️</IconBox>
           </div>
         </div>
       </div>
@@ -47,9 +46,9 @@ import IconBox from "../components/IconBox.vue"
           <div class="title">Mes langues parlées</div>
           <div class="description">Même si ce n'est que des notions...</div>
           <div class="grid-about">
-            <IconBox color="#e9ecef">🇬🇧</IconBox>
-            <IconBox color="#e9ecef">🇪🇸</IconBox>
-            <IconBox color="#e9ecef">🇮🇹</IconBox>
+            <IconBox>🇬🇧</IconBox>
+            <IconBox>🇪🇸</IconBox>
+            <IconBox>🇮🇹</IconBox>
           </div>
         </div>
       </div>
