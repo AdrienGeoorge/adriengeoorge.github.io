@@ -1,5 +1,5 @@
 <template>
-  <div class="box box-with-background" :style="{backgroundImage: 'url(' + backgroundUrl + ')'}">
+  <RouterLink :to="linkUrl" class="box box-with-background" :style="{backgroundImage: 'url(' + backgroundUrl + ')'}">
     <div class="box-content">
       <div class="title">
         <slot name="title"></slot>
@@ -7,11 +7,11 @@
       <p class="description">
         <slot name="description"></slot>
       </p>
-      <RouterLink :to="linkUrl" class="box-button">
+      <div class="box-button">
         <slot name="button"></slot>
-      </RouterLink>
+      </div>
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script>

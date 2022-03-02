@@ -9,12 +9,7 @@ import ButtonBox from "../components/ButtonBox.vue"
     <div class="box box-width-3">
       <div class="box-content about-me">
         <div class="my-memoji">
-          <div class="my-memoji-1">
-            <img class="my-memoji-image" src="/me.png" alt="Mon moi">
-          </div>
-          <div class="my-memoji-2">
-            <img class="my-memoji-image" src="/me-dev.png" alt="Mon moi">
-          </div>
+          <img class="my-memoji-image" src="/me.png" alt="Mon moi">
         </div>
         <div class="my-presentation">
           <div class="title">Hey, moi c'est Adrien 👋</div>
@@ -32,7 +27,7 @@ import ButtonBox from "../components/ButtonBox.vue"
 
     <ButtonBox class="box-width-height-2" background-url="/bg-small.png" link-url="/carrer">
       <template #title>Parce que mes projets peuvent vous éclaircir...</template>
-      <template #description>Découvrez quelques uns de mes projets</template>
+      <template #description>Découvrez quelques-uns de mes projets</template>
       <template #button>Découvrez-les</template>
     </ButtonBox>
 
