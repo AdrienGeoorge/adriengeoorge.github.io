@@ -11,6 +11,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Apple Color Emoji";
+  src: url(fonts/AppleColorEmoji.ttf) format('ttf');
+  font-display: swap;
+}
+
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;
@@ -258,7 +264,7 @@ nav {
     bottom: 2em;
     left: 50%;
     transform: translateX(-50%);
-    width: fit-content;
+    width: max-content;
     background: var(--vt-c-white-mute);
     color: var(--vt-c-text-light-1);
     text-decoration: none;
@@ -268,8 +274,8 @@ nav {
 
   .about-me {
     display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-gap: 5rem;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 3rem;
 
     &.box-content {
       align-items: center;
@@ -283,7 +289,8 @@ nav {
         height: 16em;
         position: absolute;
         bottom: -4em;
-        left: -2.5em;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -330,35 +337,26 @@ nav {
   font-size: 40px;
   text-align: center;
   background-color: var(--color-box-icon);
+  font-family: "Apple Color Emoji", sans-serif;
 }
 
-/* TRANSITIONS */
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 1s ease-out;
-  width: calc(100vw - 208px);
-  left: 10.5em;
+.zoom-enter-active,
+.zoom-leave-active {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: zoom;
 }
-
-.slide-enter-from {
-  position: absolute;
-  top: -200vh;
+.zoom-leave-active {
+  animation-direction: reverse;
 }
-
-.slide-enter-to {
-  position: absolute;
-  top: 5.5em;
-}
-
-.slide-leave-from {
-  position: absolute;
-  bottom: -5em;
-}
-
-.slide-leave-to {
-  position: absolute;
-  bottom: -200vh;
+@keyframes zoom {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes zoom-in-zoom-out {
@@ -418,33 +416,6 @@ nav {
   .grid-about {
     grid-template-columns: 1fr 1fr;
   }
-
-  .slide-enter-active,
-  .slide-leave-active {
-    transition: all 1s ease-out;
-    width: calc(100vw - 2em);
-    left: 0;
-  }
-
-  .slide-enter-from {
-    position: absolute;
-    top: -200vh;
-  }
-
-  .slide-enter-to {
-    position: absolute;
-    top: 0;
-  }
-
-  .slide-leave-from {
-    position: absolute;
-    top: 5.5em;
-  }
-
-  .slide-leave-to {
-    position: absolute;
-    bottom: -200vh;
-  }
 }
 
 @media (max-width: 1080px) {
@@ -478,32 +449,6 @@ nav {
     &.box-width-2 {
       grid-column: span 4;
     }
-  }
-
-  .slide-enter-active,
-  .slide-leave-active {
-    transition: all 1s ease-out;
-    width: calc(100vw - 2em);
-  }
-
-  .slide-enter-from {
-    position: absolute;
-    top: -300vh;
-  }
-
-  .slide-enter-to {
-    position: absolute;
-    top: 0;
-  }
-
-  .slide-leave-from {
-    position: absolute;
-    top: 0;
-  }
-
-  .slide-leave-to {
-    position: absolute;
-    bottom: -400vh;
   }
 }
 

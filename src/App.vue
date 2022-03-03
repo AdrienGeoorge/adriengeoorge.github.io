@@ -13,7 +13,7 @@ import {RouterLink, RouterView} from 'vue-router'
       <RouterLink to="/projects" title="Mes projets">🖥</RouterLink>
     </nav>
     <RouterView v-slot="{ Component }">
-      <transition name="slide">
+      <transition name="zoom" mode="out-in">
         <component :is="Component" />
       </transition>
     </RouterView>
