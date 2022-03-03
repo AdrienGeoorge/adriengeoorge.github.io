@@ -10,7 +10,9 @@ import ButtonBox from "../components/ButtonBox.vue"
           <img class="my-memoji-image" src="/me-dev.png" alt="Mon moi">
         </div>
         <div class="my-presentation">
-          <div class="title">C'est toujours moi... 👋</div>
+          <div class="title">
+            C'est toujours moi... <img src="/emojis/waving-hand.png" alt="Hey" class="waving-hand">
+          </div>
           <div class="description">Mais en train de développer</div>
           <span>Mes projets peuvent vous donner un apperçu de mon travail 👀</span>
         </div>

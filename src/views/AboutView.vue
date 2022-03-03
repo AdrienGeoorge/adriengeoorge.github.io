@@ -1,12 +1,14 @@
 <script setup>
-import IconBox from "../components/IconBox.vue"
+import IconImage from "../components/IconImage.vue"
 </script>
 
 <template>
   <div>
     <div class="box">
       <div class="box-content">
-        <div class="title">Hey, moi c'est Adrien 👋</div>
+        <div class="title">
+          Hey, moi c'est Adrien <img src="/emojis/waving-hand.png" alt="Hey" class="waving-hand">
+        </div>
         <div class="description">Développeur Full-Stack</div>
         <p>
           Mon histoire a commencé par un diplôme portant sur l'électronique en général. Diplôme m'offrant la possibilité
@@ -33,11 +35,11 @@ import IconBox from "../components/IconBox.vue"
           <div class="title">Mes passe-temps</div>
           <div class="description">Ce que je fais de mon temps libre...</div>
           <div class="grid-about">
-            <IconBox>🍿</IconBox>
-            <IconBox>🎶</IconBox>
-            <IconBox>🍻</IconBox>
-            <IconBox>🏋🏻‍♂️</IconBox>
-            <IconBox>✈️</IconBox>
+            <IconImage name="popcorn"></IconImage>
+            <IconImage name="music"></IconImage>
+            <IconImage name="beers"></IconImage>
+            <IconImage name="sport"></IconImage>
+            <IconImage name="airplane"></IconImage>
           </div>
         </div>
       </div>
@@ -46,9 +48,9 @@ import IconBox from "../components/IconBox.vue"
           <div class="title">Mes langues parlées</div>
           <div class="description">Même si ce n'est que des notions...</div>
           <div class="grid-about">
-            <IconBox>🇬🇧</IconBox>
-            <IconBox>🇪🇸</IconBox>
-            <IconBox>🇮🇹</IconBox>
+            <IconImage name="flag-UK"></IconImage>
+            <IconImage name="flag-ES"></IconImage>
+            <IconImage name="flag-IT"></IconImage>
           </div>
         </div>
       </div>

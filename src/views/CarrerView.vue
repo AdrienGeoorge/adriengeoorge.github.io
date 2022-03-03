@@ -1,6 +1,6 @@
 <script setup>
 import CarrerLine from "../components/CarrerLine.vue"
-import IconBox from "../components/IconBox.vue"
+import IconBox from "../components/SkillBox.vue"
 </script>
 
 <template>

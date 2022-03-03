@@ -11,12 +11,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Apple Color Emoji";
-  src: url(fonts/AppleColorEmoji.ttf) format('ttf');
-  font-display: swap;
-}
-
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;
@@ -61,6 +55,21 @@
   box-sizing: border-box;
   margin: 0;
   position: relative;
+}
+
+.emoji {
+  border-radius: 32px;
+  padding: 1.25em 1em;
+  text-align: center;
+  background-color: var(--color-box-icon);
+}
+
+.emoji img, .emoji-icon {
+  width: 35px;
+}
+
+.waving-hand {
+  width: 25px;
 }
 
 p {
@@ -184,7 +193,10 @@ nav {
   grid-gap: 1rem;
 
   div {
+    border-radius: 20px;
+    padding: 0.75em;
     font-size: 15px;
+    text-align: center;
     color: white;
   }
 }
@@ -331,24 +343,17 @@ nav {
   }
 }
 
-.box-icon {
-  border-radius: 32px;
-  padding: 0.75em;
-  font-size: 40px;
-  text-align: center;
-  background-color: var(--color-box-icon);
-  font-family: "Apple Color Emoji", sans-serif;
-}
-
 .zoom-enter-active,
 .zoom-leave-active {
   animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-name: zoom;
 }
+
 .zoom-leave-active {
   animation-direction: reverse;
 }
+
 @keyframes zoom {
   from {
     opacity: 0;
