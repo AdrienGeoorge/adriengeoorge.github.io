@@ -35,7 +35,32 @@ const router = createRouter({
             meta: {
                 title: 'Adrien George - Mes projets'
             }
+        },
+        {
+            path: '/projects/habbox',
+            name: 'habbox',
+            component: () => import('../views/HabboxView.vue'),
+            meta: {
+                title: 'Adrien George - Habbox'
+            }
+        },
+        {
+            path: '/projects/merit',
+            name: 'merit',
+            component: () => import('../views/MeritView.vue'),
+            meta: {
+                title: 'Adrien George - MERIT'
+            }
+        },
+        {
+            path: '/projects/cosplay',
+            name: 'cosplay',
+            component: () => import('../views/CosplayView.vue'),
+            meta: {
+                title: 'Adrien George - SocialCosplay'
+            }
         }
+
     ]
 })
 

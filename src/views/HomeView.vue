@@ -22,13 +22,13 @@ import ButtonBox from "../components/ButtonBox.vue"
     </div>
 
     <ButtonBox class="box-width-height-2" background-url="/bg-large.png" link-url="/about">
-      <template #title>Parce que vous voulez en savoir plus...</template>
+      <template #title>Parce que vous voulez en savoir plus à mon sujet...</template>
       <template #description>Apprenez-en plus sur mon parcours professionnel et mes champs de compétences</template>
       <template #button>En savoir plus</template>
     </ButtonBox>
 
-    <ButtonBox class="box-width-height-2" background-url="/bg-small.png" link-url="/carrer">
-      <template #title>Parce que mes projets peuvent vous éclaircir...</template>
+    <ButtonBox class="box-width-height-2" background-url="/bg-small.png" link-url="/projects">
+      <template #title>Parce que mes projets vous montrent mon travail...</template>
       <template #description>Découvrez quelques-uns de mes projets</template>
       <template #button>Découvrez-les</template>
     </ButtonBox>

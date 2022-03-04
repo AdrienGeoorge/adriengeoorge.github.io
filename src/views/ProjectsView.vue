@@ -14,21 +14,24 @@ import ButtonBox from "../components/ButtonBox.vue"
             C'est toujours moi... <img src="/emojis/waving-hand.png" alt="Hey" class="waving-hand">
           </div>
           <div class="description">Mais en train de développer</div>
-          <span>Mes projets peuvent vous donner un apperçu de mon travail 👀</span>
+          <span>
+            Mes projets peuvent vous donner un aperçu de mon travail
+            <img src="/emojis/eyes.png" alt="Hey" class="eyes">
+          </span>
         </div>
       </div>
     </div>
 
-    <ButtonBox class="box-width-3-height-2" background-url="/cosplay.png" link-url="/carrer">
+    <ButtonBox class="box-width-3-height-2" background-url="/cosplay.png" link-url="/projects/cosplay">
       <template #button>Découvrir</template>
     </ButtonBox>
 
-    <ButtonBox class="box-width-2" background-url="/merit.png" link-url="/carrer">
-      <template #button>Y jeter un oeil</template>
+    <ButtonBox class="box-width-2" background-url="/merit.png" link-url="/projects/merit">
+      <template #button>Y jeter un coup d'oeil</template>
     </ButtonBox>
 
-    <ButtonBox class="box-width-2" background-url="/habbox.png" link-url="/carrer">
-      <template #button>Ça en vaut le coup d'oeil</template>
+    <ButtonBox class="box-width-2" background-url="/habbox.png" link-url="/projects/habbox">
+      <template #button>Explorer</template>
     </ButtonBox>
   </div>
 </template>

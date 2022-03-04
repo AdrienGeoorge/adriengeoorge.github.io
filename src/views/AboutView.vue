@@ -11,21 +11,22 @@ import IconImage from "../components/IconImage.vue"
         </div>
         <div class="description">Développeur Full-Stack</div>
         <p>
-          Mon histoire a commencé par un diplôme portant sur l'électronique en général. Diplôme m'offrant la possibilité
+          Mon histoire a commencé par un diplôme portant sur l'électronique. Diplôme m'offrant la possibilité
           de choisir une option dans laquelle je pouvais manipuler ordinateurs, serveurs et bien d'autres composants
           informatiques.
         </p>
         <p>
-          C'est ici que tout a commencé, mon envie et mon ambition d'évoluer dans le domaine de l'informatique sont nés.
+          C'est ici que tout a commencé, mon envie et mon ambition d'évoluer dans le domaine de l'informatique sont
+          nées.
         </p>
         <p>
-          En 2017, après l'obtention de mon diplôme je me suis dirigé vers une nouvelle formation. Celle-ci me
+          En 2017, après l'obtention de mon baccalauréat je me suis dirigé vers une nouvelle formation. Celle-ci me
           permettait soit de continuer dans le domaine des télécommunications et matériels résaux, soit de m'orienter
           vers le développement web et mobile. Le choix fut difficile, mais j'ai fini par choisir le développement.
         </p>
         <p>
           Depuis, je m'améliore et j'apprends constamment de nouvelles choses. Je suis passioné, et j'ai l'envie
-          d'approfondir dans ce domaine si vaste, qui évolue en permanence.
+          d'approfondir dans ce domaine si vaste qui évolue en permanence.
         </p>
       </div>
     </div>
@@ -40,17 +41,24 @@ import IconImage from "../components/IconImage.vue"
             <IconImage name="beers"></IconImage>
             <IconImage name="sport"></IconImage>
             <IconImage name="airplane"></IconImage>
+            <IconImage name="park"></IconImage>
+            <IconImage name="photo"></IconImage>
+            <IconImage name="shopping"></IconImage>
+            <IconImage name="game"></IconImage>
+            <IconImage name="museum"></IconImage>
           </div>
         </div>
       </div>
-      <div class="box">
-        <div class="box-content">
-          <div class="title">Mes langues parlées</div>
-          <div class="description">Même si ce n'est que des notions...</div>
-          <div class="grid-about">
-            <IconImage name="flag-UK"></IconImage>
-            <IconImage name="flag-ES"></IconImage>
-            <IconImage name="flag-IT"></IconImage>
+      <div>
+        <div class="box">
+          <div class="box-content">
+            <div class="title">Mes langues parlées</div>
+            <div class="description">Même si ce n'est que des notions...</div>
+            <div class="grid-about">
+              <IconImage name="flag-UK"></IconImage>
+              <IconImage name="flag-ES"></IconImage>
+              <IconImage name="flag-IT"></IconImage>
+            </div>
           </div>
         </div>
       </div>
