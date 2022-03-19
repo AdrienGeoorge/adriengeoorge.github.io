@@ -1,6 +1,6 @@
 <template>
   <div class="emoji">
-    <img :src="`/emojis/${name}.png`" alt="{{name}}">
+    <img :src="require(`@/assets/images/emojis/${name}.png`)" alt="{{name}}">
   </div>
 </template>
 

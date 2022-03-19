@@ -1,13 +1,13 @@
 <script setup>
-import IconImage from "../components/IconImage.vue"
+import IconImage from '../components/IconImage.vue'
 </script>
 
 <template>
-  <div>
+  <div class="content">
     <div class="box">
       <div class="box-content">
         <div class="title">
-          Hey, moi c'est Adrien <img src="/emojis/waving-hand.png" alt="Hey" class="waving-hand">
+          Hey, moi c'est Adrien <img src="@/assets/images/emojis/waving-hand.png" alt="Hey" class="waving-hand">
         </div>
         <div class="description">Développeur Full-Stack</div>
         <p>
@@ -49,7 +49,7 @@ import IconImage from "../components/IconImage.vue"
           </div>
         </div>
       </div>
-      <div>
+      <div class="left">
         <div class="box">
           <div class="box-content">
             <div class="title">Mes langues parlées</div>

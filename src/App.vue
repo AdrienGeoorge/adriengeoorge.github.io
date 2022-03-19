@@ -1,21 +1,21 @@
 <script setup>
-import {RouterLink, RouterView} from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
   <div class="main">
     <nav>
       <RouterLink to="/" title="Accueil">
-        <img src="/emojis/house.png" alt="Accueil" class="emoji-icon">
+        <img src="@/assets/images/emojis/house.png" alt="Accueil" class="emoji-icon">
       </RouterLink>
       <RouterLink to="/about" title="A propos de moi">
-        <img src="/me-small.png" alt="A propos de moi" class="me-small">
+        <img src="@/assets/images/me-small.png" alt="A propos de moi" class="me-small">
       </RouterLink>
       <RouterLink to="/carrer" title="Mon parcours">
-        <img src="/emojis/books.png" alt="Mon parcours" class="emoji-icon">
+        <img src="@/assets/images/emojis/books.png" alt="Mon parcours" class="emoji-icon">
       </RouterLink>
       <RouterLink to="/projects" title="Mes projets">
-        <img src="/emojis/computer.png" alt="Mes projets" class="emoji-icon">
+        <img src="@/assets/images/emojis/computer.png" alt="Mes projets" class="emoji-icon">
       </RouterLink>
     </nav>
     <RouterView v-slot="{ Component }">
@@ -26,5 +26,4 @@ import {RouterLink, RouterView} from 'vue-router'
   </div>
 </template>
 
-<style src="@/assets/base.scss">
-</style>
+<style src="@/assets/base.scss" lang="scss"></style>
