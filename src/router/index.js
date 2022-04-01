@@ -7,7 +7,7 @@ const routes = [
     name: 'home',
     component: HomeView,
     meta: {
-      title: 'Adrien George - Développeur Full-Stack'
+      title: 'Adrien GEORGE - Développeur Full-Stack'
     }
   },
   {
@@ -15,7 +15,7 @@ const routes = [
     name: 'about',
     component: () => import('../views/AboutView.vue'),
     meta: {
-      title: 'Adrien George - A propos de moi'
+      title: 'Adrien GEORGE - A propos de moi'
     }
   },
   {
@@ -23,7 +23,7 @@ const routes = [
     name: 'carrer',
     component: () => import('../views/CarrerView.vue'),
     meta: {
-      title: 'Adrien George - Mes domaines de compétences'
+      title: 'Adrien GEORGE - Mes domaines de compétences'
     }
   },
   {
@@ -31,7 +31,7 @@ const routes = [
     name: 'projects',
     component: () => import('../views/ProjectsView.vue'),
     meta: {
-      title: 'Adrien George - Mes projets'
+      title: 'Adrien GEORGE - Mes projets'
     }
   },
   {
@@ -39,7 +39,7 @@ const routes = [
     name: 'habbox',
     component: () => import('../views/HabboxView.vue'),
     meta: {
-      title: 'Adrien George - Habbox'
+      title: 'Adrien GEORGE - Habbox'
     }
   },
   {
@@ -47,7 +47,7 @@ const routes = [
     name: 'merit',
     component: () => import('../views/MeritView.vue'),
     meta: {
-      title: 'Adrien George - MERIT'
+      title: 'Adrien GEORGE - MERIT'
     }
   },
   {
@@ -55,7 +55,7 @@ const routes = [
     name: 'cosplay',
     component: () => import('../views/CosplayView.vue'),
     meta: {
-      title: 'Adrien George - SocialCosplay'
+      title: 'Adrien GEORGE - SocialCosplay'
     }
   }
 ]

@@ -6,30 +6,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  mounted () {
-    this.map = this.getMediaPreference()
-  },
-
-  data () {
-    return {
-      map: 'map-light'
-    }
-  },
-
-  methods: {
-    getMediaPreference () {
-      const hasDarkPreference = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches
-      if (hasDarkPreference) {
-        return '/map-dark.png'
-      } else {
-        return '/map-light.png'
-      }
-    }
-  }
-}
-</script>
