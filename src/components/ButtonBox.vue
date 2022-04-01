@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="linkUrl" class="box box-with-background" :style="{backgroundImage: 'url(' + backgroundUrl + ')'}">
+  <RouterLink :to="linkUrl ? linkUrl : '#'" class="box box-with-background" :style="{backgroundImage: 'url(' + backgroundUrl + ')'}">
     <div class="box-content">
       <div class="title">
         <slot name="title"></slot>

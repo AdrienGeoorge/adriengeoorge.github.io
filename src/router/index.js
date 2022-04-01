@@ -33,30 +33,6 @@ const routes = [
     meta: {
       title: 'Adrien GEORGE - Mes projets'
     }
-  },
-  {
-    path: '/projects/habbox',
-    name: 'habbox',
-    component: () => import('../views/HabboxView.vue'),
-    meta: {
-      title: 'Adrien GEORGE - Habbox'
-    }
-  },
-  {
-    path: '/projects/merit',
-    name: 'merit',
-    component: () => import('../views/MeritView.vue'),
-    meta: {
-      title: 'Adrien GEORGE - MERIT'
-    }
-  },
-  {
-    path: '/projects/cosplay',
-    name: 'cosplay',
-    component: () => import('../views/CosplayView.vue'),
-    meta: {
-      title: 'Adrien GEORGE - SocialCosplay'
-    }
   }
 ]
 

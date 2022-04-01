@@ -10,7 +10,7 @@ import IconBox from '../components/SkillBox.vue'
         <div class="title">Mon parcours professionnel</div>
         <div class="description">Pour vous donner un historique...</div>
 
-        <CarrerLine :image="require('@/assets/images/cpam.jpeg')">
+        <CarrerLine :image="require('@/assets/images/companies/cpam.png')">
           <template #title>Analyste programmeur</template>
           <template #company>CPAM des Hauts-de-Seine, Nanterre (92)</template>
           <template #date>Septembre 2019 - Aujourd'hui</template>
@@ -19,7 +19,7 @@ import IconBox from '../components/SkillBox.vue'
           désormais en équipe
         </CarrerLine>
 
-        <CarrerLine :image="require('@/assets/images/gaston-berger.jpeg')">
+        <CarrerLine :image="require('@/assets/images/companies/gaston-berger.png')">
           <template #title>Développeur web</template>
           <template #company>Lycée Gaston Berger - MarieTeam, Lille (59)</template>
           <template #date>Septembre 2018 - Mai 2019</template>
@@ -27,7 +27,7 @@ import IconBox from '../components/SkillBox.vue'
           web, ainsi qu'un client lourd
         </CarrerLine>
 
-        <CarrerLine :image="require('@/assets/images/beware.jpeg')">
+        <CarrerLine :image="require('@/assets/images/companies/beware.png')">
           <template #title>Développeur web</template>
           <template #company>Be-Ware Informatique, Saint-Quentin (02)</template>
           <template #date>Janvier 2019 - Février 2019</template>
@@ -35,14 +35,14 @@ import IconBox from '../components/SkillBox.vue'
           commencés durant mes précédents stages dans cette même entreprise
         </CarrerLine>
 
-        <CarrerLine :image="require('@/assets/images/beware.jpeg')">
+        <CarrerLine :image="require('@/assets/images/companies/beware.png')">
           <template #title>Développeur web</template>
           <template #company>Be-Ware Informatique, Saint-Quentin (02)</template>
           <template #date>Août 2018</template>
           Première expérience en CDD pour un contrat d'été que l'on m'a proposé suite à mon précédent stage
         </CarrerLine>
 
-        <CarrerLine :image="require('@/assets/images/beware.jpeg')">
+        <CarrerLine :image="require('@/assets/images/companies/beware.png')">
           <template #title>Développeur web</template>
           <template #company>Be-Ware Informatique, Saint-Quentin (02)</template>
           <template #date>Mai 2018 - Juin 2018</template>
