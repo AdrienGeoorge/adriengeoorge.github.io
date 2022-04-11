@@ -1,6 +1,6 @@
 <template>
   <div class="grid-carrer">
-    <img :src="image" alt="" style="width: 100%; margin-top: 1em;">
+    <img :src="image" alt="" class="company-logo">
     <div class="job-line">
       <div class="title">
         <slot name="title"></slot>

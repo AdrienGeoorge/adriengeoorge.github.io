@@ -27,7 +27,6 @@
 
 <script>
 export default {
-  props: ['url'],
   methods: {
     closeWindow: event => {
       event.target.closest('.projects-view').classList.add('d-none')
