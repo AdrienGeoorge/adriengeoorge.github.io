@@ -5,7 +5,7 @@ import ButtonBox from '../components/ButtonBox.vue'
 </script>
 
 <template>
-  <div class="grid">
+  <div class="grid home-grid">
     <div class="box box-width-3">
       <div class="box-content about-me">
         <div class="my-memoji">

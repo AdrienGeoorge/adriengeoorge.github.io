@@ -4,34 +4,29 @@ import IconImage from '../components/IconImage.vue'
 
 <template>
   <div class="content">
-    <div class="box">
+    <div class="box about-me">
       <div class="box-content">
         <div class="title">
           Hey, moi c'est Adrien <img src="@/assets/images/emojis/waving-hand.png" alt="Hey" class="waving-hand">
         </div>
         <div class="description">Développeur Full-Stack</div>
+        <div class="description">Diplômé d'un Mastère Développement Web & Mobile et d'un Mastère Architecte Big Data</div>
         <p>
-          Mon histoire a commencé par un diplôme portant sur l'électronique. Diplôme m'offrant la possibilité
-          de choisir une option dans laquelle je pouvais manipuler ordinateurs, serveurs et bien d'autres composants
-          informatiques.
+          Je suis passionné par l'informatique et les nouvelles technologies depuis l'adolescence.<br>
+          Abonné à l'actualité tech, je passe beaucoup de temps à lire des articles sur les avancées technologiques.
         </p>
         <p>
-          C'est ici que tout a commencé, mon envie et mon ambition d'évoluer dans le domaine de l'informatique sont
-          nées.
+          Développeur Full-Stack, je conçois et réalise des applications web.<br>
+          Le design est une chose qui m'intéresse grandement. Je travaille beaucoup sur ce point afin de m'améliorer.
         </p>
         <p>
-          En 2017, après l'obtention de mon baccalauréat je me suis dirigé vers une nouvelle formation. Celle-ci me
-          permettait soit de continuer dans le domaine des télécommunications et matériels résaux, soit de m'orienter
-          vers le développement web et mobile. Le choix fut difficile, mais j'ai fini par choisir le développement.
-        </p>
-        <p>
-          Depuis, je m'améliore et j'apprends constamment de nouvelles choses. Je suis passioné, et j'ai l'envie
-          d'approfondir dans ce domaine si vaste qui évolue en permanence.
+          Mes expériences m'ont permises de découvrir la gestion de projets et d'être en charge du pilotage,
+          du développement et du suivi d'un projet from scratch.
         </p>
       </div>
     </div>
     <div class="grid_1_1">
-      <div class="box">
+      <div class="box hobbies">
         <div class="box-content">
           <div class="title">Mes passe-temps</div>
           <div class="description">Ce que je fais de mon temps libre...</div>
@@ -50,7 +45,7 @@ import IconImage from '../components/IconImage.vue'
         </div>
       </div>
       <div class="left">
-        <div class="box">
+        <div class="box languages">
           <div class="box-content">
             <div class="title">Mes langues parlées</div>
             <div class="description">Même si ce n'est que des notions...</div>

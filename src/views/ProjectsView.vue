@@ -5,7 +5,7 @@ import ProjectShow from '@/components/ProjectShow'
 
 <template>
   <div class="content">
-    <div class="grid">
+    <div class="grid projects-grid">
       <div class="box box-width-4">
         <div class="box-content about-me">
           <div class="my-memoji">
@@ -15,7 +15,7 @@ import ProjectShow from '@/components/ProjectShow'
             <div class="title">
               C'est toujours moi... <img src="@/assets/images/emojis/waving-hand.png" alt="Hey" class="waving-hand">
             </div>
-            <div class="description">Mais en train de développer</div>
+            <div class="description">Et cette fois-ci je vous dévoile quelques-unes de mes créations!</div>
             <span>
             Mes projets peuvent vous donner un aperçu de mon travail
             <img src="@/assets/images/emojis/eyes.png" alt="Hey" class="eyes">
@@ -50,9 +50,10 @@ import ProjectShow from '@/components/ProjectShow'
         <img :src="require('@/assets/images/projects/cosplay/cosplay-logo.png')" alt="Cosplay" class="logo">
       </template>
       <template #title>Une application mobile</template>
-      <template #small-description>Il s'agit d'un projet scolaire réalisé en groupe lors de mon Mastère 1 Développement Web &
+      <template #small-description>Il s'agit d'un projet scolaire réalisé en groupe lors de mon Mastère Développement Web &
         Mobile.
       </template>
+<!--      TODO: Ajout lien git-->
       <template #big-description>
         <p>
           Pour ce projet qui a été développé en équipe, nous devions réalisé un réseau social sous la forme d'une
@@ -105,6 +106,13 @@ import ProjectShow from '@/components/ProjectShow'
           <span class="mt-1 d-block">
             C'est en 2021 que l'on m'a contacté dans le but de refondre totalement le design du site qui commençait à se
             faire vieux et pour y rajouter quelques fonctionnalités.
+          </span>
+          <span class="mt-1 d-block">
+            En 2023, dans l'optique de proposer une v3, j'ai refondu le site complètement pour le moderniser aussi bien
+            au niveau back que front.
+          </span>
+          <span class="mt-1 d-block">
+            Projet réalisé sous <b>Symfony 5</b>.
           </span>
         </p>
       </template>
