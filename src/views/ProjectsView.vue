@@ -64,9 +64,11 @@ import ProjectShow from '@/components/ProjectShow'
         </p>
       </template>
       <template #default>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/cosplay/1.png') + ')'}" class="two-col-two-rows"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/cosplay/2.png') + ')'}" class="two-col-two-rows"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/cosplay/3.png') + ')'}" class="two-col-two-rows"></div>
+        <div class="grid-photos">
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/cosplay/1.png') + ')'}" class="two-col-two-rows"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/cosplay/2.png') + ')'}" class="two-col-two-rows"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/cosplay/3.png') + ')'}" class="two-col-two-rows"></div>
+        </div>
       </template>
     </ProjectShow>
     <ProjectShow id="merit">
@@ -87,10 +89,12 @@ import ProjectShow from '@/components/ProjectShow'
         </p>
       </template>
       <template #default>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/1.png') + ')'}" class="two-rows-two-col"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/2.png') + ')'}"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/4.png') + ')'}"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/3.png') + ')'}" class="four-col"></div>
+        <div class="grid-photos">
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/1.png') + ')'}" class="two-rows-two-col"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/2.png') + ')'}"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/4.png') + ')'}"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/merit/3.png') + ')'}" class="four-col"></div>
+        </div>
       </template>
     </ProjectShow>
     <ProjectShow id="habbox">
@@ -108,19 +112,29 @@ import ProjectShow from '@/components/ProjectShow'
             faire vieux et pour y rajouter quelques fonctionnalités.
           </span>
           <span class="mt-1 d-block">
-            En 2023, dans l'optique de proposer une v3, j'ai refondu le site complètement pour le moderniser aussi bien
-            au niveau back que front.
+            En 2023, dans l'optique de proposer une v4, j'ai refondu le site complètement pour le moderniser aussi bien
+            au niveau back (Symfony 6) que front (refonte design).
           </span>
           <span class="mt-1 d-block">
-            Projet réalisé sous <b>Symfony 5</b>.
+            Projet réalisé sous <b>Symfony 6</b>.
           </span>
         </p>
       </template>
       <template #default>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/1.png') + ')'}" class="four-col"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/2.png') + ')'}" class="two-rows-two-col"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/4.png') + ')'}"></div>
-        <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/3.png') + ')'}"></div>
+        <div class="title-version">Version 4.0.0 du site (2024)</div>
+        <div class="grid-photos">
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v3/1.png') + ')'}" class="four-col no-radius"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v3/2.png') + ')'}" class="two-rows-two-col no-radius"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v3/4.png') + ')'}" class="no-radius"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v3/3.png') + ')'}" class="no-radius"></div>
+        </div>
+        <div class="title-version">Version 3.1.1 du site (2023)</div>
+        <div class="grid-photos">
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v2/1.png') + ')'}" class="four-col"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v2/2.png') + ')'}" class="two-rows-two-col"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v2/4.png') + ')'}"></div>
+          <div :style="{backgroundImage: 'url(' + require('@/assets/images/projects/habbox/v2/3.png') + ')'}"></div>
+        </div>
       </template>
     </ProjectShow>
   </div>

@@ -18,9 +18,7 @@
           <slot name="big-description"></slot>
         </div>
       </div>
-      <div class="grid-photos">
-        <slot></slot>
-      </div>
+      <slot></slot>
     </div>
   </div>
 </template>
