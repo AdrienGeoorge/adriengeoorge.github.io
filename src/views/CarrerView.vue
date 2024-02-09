@@ -46,7 +46,7 @@ import IconBox from '../components/SkillBox.vue'
           <CarrerLine :image="require('@/assets/images/companies/beware.png')">
             <template #title>Développeur web</template>
             <template #company>Be-Ware Informatique, Saint-Quentin (02)</template>
-            <template #date>Mai 2018 - Juin 2018</template>
+            <template #date>Mai - Juin 2018</template>
             - Premier stage dans le domaine du développement<br>
             - Découverte du framework Symfony et développement de bundles applicatifs
           </CarrerLine>
