@@ -16,6 +16,7 @@
             <slot name="small-description"></slot>
           </div>
           <slot name="big-description"></slot>
+          <slot name="git-link"></slot>
         </div>
       </div>
       <slot></slot>

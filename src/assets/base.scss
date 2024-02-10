@@ -406,6 +406,7 @@ body {
           .grid_1_2 {
             display: grid;
             grid-template-columns: 1fr 2fr;
+            margin-bottom: 2em;
 
             .left-side {
               position: relative;
@@ -439,6 +440,23 @@ body {
                 font-weight: 300;
                 margin-bottom: 1rem;
                 color: var(--color-heading);
+              }
+
+              .git-link {
+                font-family: silka medium, sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+                background-color: white;
+                padding: 0.5em 1em;
+                margin-top: .75em;
+                display: block;
+                width: fit-content;
+                color: black;
+                text-decoration: unset;
+
+                &:hover {
+                  background-color: #e3e3e3;
+                }
               }
             }
           }

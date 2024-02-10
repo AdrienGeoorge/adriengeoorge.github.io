@@ -53,7 +53,6 @@ import ProjectShow from '@/components/ProjectShow'
       <template #small-description>Il s'agit d'un projet scolaire réalisé en groupe lors de mon Mastère Développement Web &
         Mobile.
       </template>
-<!--      TODO: Ajout lien git-->
       <template #big-description>
         <p>
           Pour ce projet qui a été développé en équipe, nous devions réalisé un réseau social sous la forme d'une
@@ -62,6 +61,9 @@ import ProjectShow from '@/components/ProjectShow'
             Projet réalisé sous <b>React Native</b> pour le côté Front-End et sous <b>NodeJS (API GraphQL)</b> pour le côté Back-End.
           </span>
         </p>
+      </template>
+      <template #git-link>
+        <a href="https://github.com/ProjectSocialCosplay" target="_blank" class="git-link">Accèder au repository GitHub</a>
       </template>
       <template #default>
         <div class="grid-photos">
@@ -118,6 +120,7 @@ import ProjectShow from '@/components/ProjectShow'
           <span class="mt-1 d-block">
             Projet réalisé sous <b>Symfony 6</b>.
           </span>
+          <small>Repository en privé pour éviter les vols.</small>
         </p>
       </template>
       <template #default>
@@ -143,10 +146,15 @@ import ProjectShow from '@/components/ProjectShow'
 <script>
 export default {
   methods: {
+    restartLogoAnimation: function (view) {
+      const logo = view.querySelector('.logo')
+      logo.src = logo.getAttribute('src') + '?v=' + Math.random()
+    },
     openProjectView: function (event) {
       const view = document.getElementById(event.target.closest('.box').getAttribute('data-project'))
       view.classList.remove('d-none')
       document.body.style.overflow = 'hidden'
+      this.restartLogoAnimation(view)
     }
   }
 }
